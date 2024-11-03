@@ -4,9 +4,38 @@ body {
 }
 
 .sidebar {
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     background-image: url(./background-image.avif);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 35vw 100vh;
+    position: relative;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    height: 15vh;
+    font-family: "Norse Bold";
+}
+
+.icon div {
+    font-size: 10vh;
+}
+
+.odin-icon {
+    height: 15vh;
 }
