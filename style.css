@@ -4,11 +4,11 @@ body {
 }
 
 .sidebar {
-    width: 35vw;
+    width: 40vw;
     height: 100vh;
     background-image: url(./background-image.avif);
     background-repeat: no-repeat;
-    background-size: 35vw 100vh;
+    background-size: 40vw 100vh;
     position: relative;
 }
 
@@ -38,4 +38,61 @@ body {
 
 .odin-icon {
     height: 15vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #eff0f1;
+    gap: 10px;
+    font-family: ubuntu;
+}
+
+.notice {
+    margin: 50px 60px 20px 25px;
+}
+
+form {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 3px 10px #cccccc;
+}
+
+form > div {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    gap: 10px 40px;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.input {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.create {
+    align-self: baseline;
+    margin: 20px 25px;
+    border-radius: 8px;
+    padding: 12px 45px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    margin: 0px 25px;
+    font-size: 15px;
 }
