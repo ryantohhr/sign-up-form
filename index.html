@@ -20,30 +20,32 @@
             <p>You <em>know</em> you want to</p>
         </div>
         <form>
+        <div class="form">
             <div class="form-header">Let's do this!</div>
             <fieldset>
                 <div class="input">
-                    <label for="first-name">FIRST NAME</label><input type="text" name="first-name">
+                    <label for="first-name">FIRST NAME</label><input type="text" name="first-name" required>
                 </div>
                 <div class="input">
-                    <label for="last-name">LAST NAME</label><input type="text" name="last-name">
+                    <label for="last-name">LAST NAME</label><input type="text" name="last-name" required>
                 </div>
                 <div class="input">
-                    <label for="email">EMAIL</label><input type="email" name="email">
+                    <label for="email">EMAIL</label><input type="email" name="email" required>
                 </div>
                 <div class="input">
-                    <label for="phone-number">PHONE NUMBER</label><input type="number" name="phone-number">
+                    <label for="phone-number">PHONE NUMBER</label><input type="number" name="phone-number" required>
+                </div>
+                <div class="input" id="pwdDiv">
+                    <label for="passwordset">PASSWORD</label><input type="password" name="passwordset" id="pwdSet" required>
                 </div>
                 <div class="input">
-                    <label for="passwordset">PASSWORD</label><input type="password" name="passwordset">
-                </div>
-                <div class="input">
-                    <label for="passwordconfirm">CONFIRM PASSWORD</label><input type="password" name="passwordconfirm">
+                    <label for="passwordconfirm">CONFIRM PASSWORD</label><input type="password" name="passwordconfirm" id="pwdCfm" required>
                 </div>
             </fieldset>
+        </div>
+        <button class="create" type="submit">Create Account</button>
         </form>
-        <button class="create">Create Account</button>
-        <div class="login">Already have an account? Log in</div>
+        <div class="login">Already have an account? <a href="index.html">Log in</a></div>
     </div>
 </body>
 </html>

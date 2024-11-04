@@ -52,7 +52,7 @@ body {
     margin: 50px 60px 20px 25px;
 }
 
-form {
+.form {
     padding: 20px 25px;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ form {
     box-shadow: 0 3px 10px #cccccc;
 }
 
-form > div {
+.form-header {
     margin-bottom: 20px;
 }
 
@@ -81,9 +81,25 @@ fieldset {
     letter-spacing: 1.5px;
 }
 
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+input:invalid {
+    border-color: rgb(219, 0, 0);
+}
+
+input:focus {
+    outline: none;
+    border: solid 1px rgb(0, 89, 255);
+    box-shadow: 1px 1px 2px black;
+}
+
 .create {
     align-self: baseline;
-    margin: 20px 25px;
+    margin: 25px 0px 10px 25px;
     border-radius: 8px;
     padding: 12px 45px;
     border: none;
@@ -95,4 +111,10 @@ fieldset {
 .login {
     margin: 0px 25px;
     font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
 }
